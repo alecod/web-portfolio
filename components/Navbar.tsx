@@ -6,8 +6,17 @@ import { useRef, useState } from 'react'
 import { MdOutlineClose } from 'react-icons/md'
 import { TbBrandGithub } from 'react-icons/tb'
 import { SlSocialYoutube, SlSocialLinkedin, SlSocialInstagram } from 'react-icons/sl'
+import { useTranslation } from 'next-i18next'
 
 const Navbar = () => {
+
+  const { t: translate, i18n } = useTranslation()
+
+  const handleLanguage = (l: string) => {
+    i18n.changeLanguage(l)
+  }
+
+
   const ref = useRef<string | any>('')
   const [showMenu, setShowMenu] = useState(false)
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -36,6 +45,9 @@ const Navbar = () => {
       <div className="max w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
           <Image className="w-14" src={logo} alt="logo" />
+          <button onClick={() => handleLanguage('en')}>trocar en</button>
+          <br/>
+         <button onClick={() => handleLanguage('pt')}>trocar pt</button>
         </motion.div>
         <div className="hidden mdl:inline-flex items-center gap-7">
           <ul className="flex text-[13px] gap-7">
@@ -44,28 +56,28 @@ const Navbar = () => {
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1 }}
-              >Home</motion.li>
+              >{translate('navItem1')}</motion.li>
             </Link>
             <Link href="#about" className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link' onClick={handleScroll}>
               <motion.li
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.1 }}
-              ><span className="text-textGreen">01.</span> About</motion.li>
+              ><span className="text-textGreen">01.</span> {translate('navItem2')}</motion.li>
             </Link>
             <Link href="#experience" className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link' onClick={handleScroll}>
               <motion.li
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.2 }}
-              ><span className="text-textGreen">02.</span> Experience</motion.li>
+              ><span className="text-textGreen">02.</span> {translate('navItem3')}</motion.li>
             </Link>
             <Link href="#project" className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link' onClick={handleScroll}>
               <motion.li
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.3 }}
-              ><span className="text-textGreen">03.</span> Projects</motion.li>
+              ><span className="text-textGreen">03.</span> {translate('navItem4')}</motion.li>
             </Link>
             <Link href="#contact" className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link'
               onClick={handleScroll}
@@ -74,7 +86,7 @@ const Navbar = () => {
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.4 }}
-              ><span className="text-textGreen">04.</span> Contact</motion.li>
+              ><span className="text-textGreen">04.</span> {translate('navItem5')}</motion.li>
             </Link>
           </ul>
           <a href="/assets/eng-curriculo-alessandro-junqueira.pdf" target="_blank">
