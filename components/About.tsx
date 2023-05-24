@@ -13,7 +13,7 @@ const About = () => {
         <SectionTitle title="About" titleNo="01."/>
         <div className="flex flex-col lgl:flex-row gap-16">
           <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
-            <p>The challenge is in my vein and every project I"m involved in always looking for ideas and visions to aggregate and bring results. Web development is one of my passions. Today I can add my market visions to the company, according to the business segments, in addition to the technical part of the development of applications using Javascript, React, Next and everything related to this type of ecosystem present today in the company. web.</p>
+            <p>The challenge is in my vein and every project Im involved in always looking for ideas and visions to aggregate and bring results. Web development is one of my passions. Today I can add my market visions to the company, according to the business segments, in addition to the technical part of the development of applications using Javascript, React, Next and everything related to this type of ecosystem present today in the company. web.</p>
             <p>In these years as a developer I have already dealt with several types of development scenarios, from PHP projects, Laravel, e-commerce, .NET, Wordpress, React, Next, React Native among other scenarios.
             Today my focus is to continue evolving as a developer to become a Software Engineer, understand project architecture (Solid among others) and continue on the path of evolution in Javascript, Next and Typescript</p>
             <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
