@@ -1,9 +1,9 @@
-import SectionTitle from './SectionTitle'
-import Image from 'next/image'
-import { amazonImg, cyberImg } from '@/public/assets'
-import { AiOutlineYoutube } from 'react-icons/ai'
-import { TbBrandGithub } from 'react-icons/tb'
-import { RxOpenInNewWindow } from 'react-icons/rx'
+import SectionTitle from "./SectionTitle"
+import Image from "next/image"
+import { amazonImg, cyberImg } from "@/public/assets"
+import { AiOutlineYoutube } from "react-icons/ai"
+import { TbBrandGithub } from "react-icons/tb"
+import { RxOpenInNewWindow } from "react-icons/rx"
 
 
 const Projects = () => {
@@ -11,7 +11,7 @@ const Projects = () => {
     <section
     id="project" className="max-w-container mx-auto lgl:px-20 py-24"
     >
-        <SectionTitle title='Some Things I have Built' titleNo="03." />
+        <SectionTitle title="Some Things I have Built" titleNo="03." />
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
            <div className="w-full flex flex-col items-center justify-center gap-20 mt-10">
            <div className="flex flex-col xl:flex-row gap-6">
