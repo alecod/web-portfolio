@@ -4,6 +4,7 @@ import { amazonImg, cyberImg } from "@/public/assets"
 import { AiOutlineYoutube } from "react-icons/ai"
 import { TbBrandGithub } from "react-icons/tb"
 import { RxOpenInNewWindow } from "react-icons/rx"
+import Link from "next/link"
 
 
 const Projects = () => {
@@ -15,11 +16,11 @@ const Projects = () => {
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
            <div className="w-full flex flex-col items-center justify-center gap-20 mt-10">
            <div className="flex flex-col xl:flex-row gap-6">
-                <a href="/" className="w-full xl:w-1/2 h-auto relative group" target="_blank">
+                <Link href="/" className="w-full xl:w-1/2 h-auto relative group" target="_blank">
                 <div>
                     <Image className="w-full h-full object-contain" src={amazonImg} alt="Amazon Img"/>
                 </div>
-                </a>
+                </Link>
                 <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">
                 <p className="font-titleFont text-textGreen text-sm tracking-wide">Featured Project</p>
                 <h3 className="text-2xl font-bold">Amazon Clone 2.0</h3>
@@ -32,24 +33,24 @@ const Projects = () => {
                     <li>Vercel</li>
                 </ul>
                 <div className="text-2xl flex gap-4">
-                    <a href="/" className="hover:text-textGreen duration-300">
+                    <Link href="/" className="hover:text-textGreen duration-300">
                         <TbBrandGithub />
-                    </a>
-                    <a href="/" className="hover:text-textGreen duration-300">
+                    </Link>
+                    <Link href="/" className="hover:text-textGreen duration-300">
                         <AiOutlineYoutube />
-                    </a>
-                    <a href="/" className="hover:text-textGreen duration-300">
+                    </Link>
+                    <Link href="/" className="hover:text-textGreen duration-300">
                         <RxOpenInNewWindow />
-                    </a>
+                    </Link>
                 </div>
             </div>
             </div>
             <div className="flex flex-col xl:flex-row-reverse gap-6">
-                <a href="/" className="w-full xl:w-1/2 h-auto relative group" target="_blank">
+                <Link href="/" className="w-full xl:w-1/2 h-auto relative group" target="_blank">
                 <div>
                     <Image className="w-full h-full object-contain" src={cyberImg} alt="Amazon Img"/>
                 </div>
-                </a>
+                </Link>
                 <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right z-10">
                 <p className="font-titleFont text-textGreen text-sm tracking-wide">Featured Project</p>
                 <h3 className="text-2xl font-bold">Amazon Clone 2.0</h3>
@@ -62,15 +63,15 @@ const Projects = () => {
                     <li>Vercel</li>
                 </ul>
                 <div className="text-2xl flex gap-4">
-                    <a href="/" className="hover:text-textGreen duration-300">
+                    <Link href="/" className="hover:text-textGreen duration-300">
                         <TbBrandGithub />
-                    </a>
-                    <a href="/" className="hover:text-textGreen duration-300">
+                    </Link>
+                    <Link href="/" className="hover:text-textGreen duration-300">
                         <AiOutlineYoutube />
-                    </a>
-                    <a href="/" className="hover:text-textGreen duration-300">
+                    </Link>
+                    <Link href="/" className="hover:text-textGreen duration-300">
                         <RxOpenInNewWindow />
-                    </a>
+                    </Link>
                 </div>
             </div>
             </div>
