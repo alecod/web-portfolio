@@ -1,4 +1,4 @@
-import { logo } from '@/public/assets'
+import { logo, euaSvg, brSvg } from '@/public/assets'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
@@ -8,6 +8,7 @@ import { TbBrandGithub } from 'react-icons/tb'
 import { SlSocialYoutube, SlSocialLinkedin, SlSocialInstagram } from 'react-icons/sl'
 import { useTranslation } from 'next-i18next'
 
+
 const Navbar = () => {
 
   const { t: translate, i18n } = useTranslation()
@@ -16,7 +17,7 @@ const Navbar = () => {
     i18n.changeLanguage(l)
   }
 
-
+  const [showFlag, setShowFlag] = useState(true)
   const ref = useRef<string | any>('')
   const [showMenu, setShowMenu] = useState(false)
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -35,9 +36,9 @@ const Navbar = () => {
     e.currentTarget.classList.add('active')
   }
 
-  function handleClick(e: any)  {
-    if(e.target.contains(ref.current))
-    setShowMenu(false)
+  function handleClick(e: any) {
+    if (e.target.contains(ref.current))
+      setShowMenu(false)
   }
 
   return (
@@ -45,9 +46,6 @@ const Navbar = () => {
       <div className="max w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
           <Image className="w-14" src={logo} alt="logo" />
-          <button onClick={() => handleLanguage('en')}>trocar en</button>
-          <br/>
-         <button onClick={() => handleLanguage('pt')}>trocar pt</button>
         </motion.div>
         <div className="hidden mdl:inline-flex items-center gap-7">
           <ul className="flex text-[13px] gap-7">
@@ -98,6 +96,24 @@ const Navbar = () => {
             >Resume</motion.button>
           </a>
 
+          <div className='flex'>
+            {showFlag ? (
+              <button onClick={() => {
+                setShowFlag(false);
+                handleLanguage('en')
+              }}
+              >
+                <Image className="w-6 rounded-md" src={euaSvg} alt="logo" />
+              </button>
+            ) : (
+              <button onClick={() => {
+                handleLanguage('pt')
+                setShowFlag(true)
+              }}><Image className="w-6 rounded-md" src={brSvg} alt="logo" /></button>
+            )}
+
+          </div>
+
         </div>
         {/* Small Icon Section*/}
         <div
@@ -110,7 +126,7 @@ const Navbar = () => {
         {
           showMenu && (
             <div ref={(node) => (ref.current = node)}
-            onClick={handleClick}
+              onClick={handleClick}
               className=' absolute mdl:hidden top-0 right-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-end'
             >
               <motion.div
@@ -163,47 +179,47 @@ const Navbar = () => {
                     </Link>
                   </ul>
                   <a href="/assets/eng-curriculo-alessandro-junqueira.pdf" target="_blank">
-            <motion.button
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.6, ease: 'easeIn' }}
-              className="px-4 py-2 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
-            >Resume</motion.button>
-          </a>
+                    <motion.button
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.6, ease: 'easeIn' }}
+                      className="px-4 py-2 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
+                    >Resume</motion.button>
+                  </a>
 
-          <div className='gap-4 flex'>
-          <motion.a href="/"  initial={{y: 20, opacity: 0}}
-        animate={{y: 0, opacity: 1}}
-        transition={{delay: 1, ease: 'easeIn'}}>
-            <span className=' w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300'>
-                <TbBrandGithub />
-            </span>
-        </motion.a>
-        <motion.a href="/"  initial={{y: 20, opacity: 0}}
-        animate={{y: 0, opacity: 1}}
-        transition={{delay: 1, ease: 'easeIn'}}>
-            <span className=' w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300'>
-                <SlSocialYoutube />
-            </span>
-        </motion.a>
-        <motion.a href="/"  initial={{y: 20, opacity: 0}}
-        animate={{y: 0, opacity: 1}}
-        transition={{delay: 1, ease: 'easeIn'}}>
-            <span className=' w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300'>
-                <SlSocialLinkedin />
-            </span>
-        </motion.a>
-        <motion.a 
-        initial={{y: 20, opacity: 0}}
-        animate={{y: 0, opacity: 1}}
-        transition={{delay: 1, ease: 'easeIn'}}
-        href="/">
-            <span className=' w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300'>
-                <SlSocialInstagram />
-            </span>
-        </motion.a>
+                  <div className='gap-4 flex'>
+                    <motion.a href="/" initial={{ y: 20, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ delay: 1, ease: 'easeIn' }}>
+                      <span className=' w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300'>
+                        <TbBrandGithub />
+                      </span>
+                    </motion.a>
+                    <motion.a href="/" initial={{ y: 20, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ delay: 1, ease: 'easeIn' }}>
+                      <span className=' w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300'>
+                        <SlSocialYoutube />
+                      </span>
+                    </motion.a>
+                    <motion.a href="/" initial={{ y: 20, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ delay: 1, ease: 'easeIn' }}>
+                      <span className=' w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300'>
+                        <SlSocialLinkedin />
+                      </span>
+                    </motion.a>
+                    <motion.a
+                      initial={{ y: 20, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ delay: 1, ease: 'easeIn' }}
+                      href="/">
+                      <span className=' w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300'>
+                        <SlSocialInstagram />
+                      </span>
+                    </motion.a>
 
-          </div>
+                  </div>
 
                 </div>
               </motion.div>
