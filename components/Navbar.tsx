@@ -17,7 +17,7 @@ const Navbar = () => {
     i18n.changeLanguage(l)
   }
 
-  const [showFlag, setShowFlag] = useState(true)
+  const [showFlag, setShowFlag] = useState(false)
   const ref = useRef<string | any>('')
   const [showMenu, setShowMenu] = useState(false)
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
