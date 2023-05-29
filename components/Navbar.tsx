@@ -94,8 +94,7 @@ const Navbar = () => {
               transition={{ delay: 0.5 }}
               className="px-4 py-2 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
             >Resume</motion.button>
-          </a>
-
+          </a> 
           <div className='flex'>
             {showFlag ? (
               <button onClick={() => {
@@ -145,28 +144,28 @@ const Navbar = () => {
                         initial={{ y: -10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.1, delay: 0.1, ease: 'easeIn' }}
-                      >Home</motion.li>
+                      >{translate('navItem1')}</motion.li>
                     </Link>
                     <Link href="#about" className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link' onClick={handleScroll}>
                       <motion.li
                         initial={{ y: -10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.2, delay: 0.2, ease: 'easeIn' }}
-                      ><span className="text-textGreen">01.</span> About</motion.li>
+                      ><span className="text-textGreen">01.</span> {translate('navItem2')}</motion.li>
                     </Link>
                     <Link href="#experience" className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link' onClick={handleScroll}>
                       <motion.li
                         initial={{ y: -10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.3, delay: 0.3, ease: 'easeIn' }}
-                      ><span className="text-textGreen">02.</span> Experience</motion.li>
+                      ><span className="text-textGreen">02.</span> {translate('navItem3')}</motion.li>
                     </Link>
                     <Link href="#project" className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link' onClick={handleScroll}>
                       <motion.li
                         initial={{ y: -10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.4, delay: 0.4, ease: 'easeIn' }}
-                      ><span className="text-textGreen">03.</span> Projects</motion.li>
+                      ><span className="text-textGreen">03.</span> {translate('navItem4')}</motion.li>
                     </Link>
                     <Link href="#contact" className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link'
                       onClick={handleScroll}
@@ -175,7 +174,7 @@ const Navbar = () => {
                         initial={{ y: -10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.5, ease: 'easeIn' }}
-                      ><span className="text-textGreen">04.</span> Contact</motion.li>
+                      ><span className="text-textGreen">04.</span> {translate('navItem5')}</motion.li>
                     </Link>
                   </ul>
                   <a href="/assets/eng-curriculo-alessandro-junqueira.pdf" target="_blank">
@@ -184,7 +183,7 @@ const Navbar = () => {
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.6, ease: 'easeIn' }}
                       className="px-4 py-2 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
-                    >Resume</motion.button>
+                    >{translate('resume')}</motion.button>
                   </a>
 
                   <div className='gap-4 flex'>
