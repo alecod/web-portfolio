@@ -12,7 +12,7 @@ const About = () => {
     id="about"
     className="max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8"
     >
-        <SectionTitle title="" titleNo="01."/>
+        <SectionTitle title="About" titleNo="01."/>
         <div className="flex flex-col lgl:flex-row gap-16">
           <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
             <p>The challenge is in my vein and every project Im involved in always looking for ideas and visions to aggregate and bring results. Web development is one of my passions. Today I can </p>
@@ -27,9 +27,6 @@ const About = () => {
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-textGreen"><AiFillThunderbolt /></span>React.js
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-textGreen"><AiFillThunderbolt /></span>Node.js
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-textGreen"><AiFillThunderbolt /></span>Typescript
