@@ -26,9 +26,7 @@ const Banner = () => {
                 className="text-base md:max-w-[650px] text-textDark font-medium">
                  Im a front-end developer with experience in technologies like React, Next, TypeScript and React Native. I have extensive experience in creating responsive and interactiveuser interfaces, as well as implementing business logic in web and mobile applications.
                 <br />
-                <Link href="/">
-                    <span className="text-textGreen inline-flex realtive cursor-pointer h-7 overflow-x-hidden group">Learn More</span>
-                </Link>
+             
             </motion.p>
             <motion.button 
             initial={{ y: 10, opacity: 0 }}
