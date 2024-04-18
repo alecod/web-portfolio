@@ -3,18 +3,16 @@ import SectionTitle from "./SectionTitle"
 import { AiFillThunderbolt } from "react-icons/ai"
 import Image from "next/image"
 import { profileImg } from "@/public/assets"
-import { useTranslation } from 'next-i18next'
 
 const About = () => {
 
-  const { t: translate } = useTranslation()
 
   return (
     <section
     id="about"
     className="max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8"
     >
-        <SectionTitle title={translate('text7')} titleNo="01."/>
+        <SectionTitle title="" titleNo="01."/>
         <div className="flex flex-col lgl:flex-row gap-16">
           <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
             <p>The challenge is in my vein and every project Im involved in always looking for ideas and visions to aggregate and bring results. Web development is one of my passions. Today I can </p>
