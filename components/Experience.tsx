@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import SectionTitle from './SectionTitle'
 import Vagas from './works/Vagas'
 import Distrito from './works/Distrito'
+import Intergalaxy from './works/Intergalaxy'
 import Garden from './works/Garden'
 import Malte from './works/Malte'
 
@@ -9,12 +10,14 @@ const Experience = () => {
 
     const [workVagas, setWorkVagas] = useState(true)
     const [workDistrito, setWorkDistrito] = useState(false)
+    const [workIntergalaxy, setWorkIntergalaxy] = useState(false)
     const [workGarden, setWorkGarden] = useState(false)
     const [workMalte, setWorkMalte] = useState(false)
 
     const handleVagas = () => {
         setWorkVagas(true)
         setWorkDistrito(false)
+        setWorkIntergalaxy(false)
         setWorkGarden(false)
         setWorkMalte(false)
     }
@@ -22,14 +25,25 @@ const Experience = () => {
     const handleDistrito = () => {
         setWorkVagas(false)
         setWorkDistrito(true)
+        setWorkIntergalaxy(false)
+        setWorkGarden(false)
+        setWorkMalte(false)
+    }
+
+    const handleIntergalxy = () => {
+        setWorkVagas(false)
+        setWorkDistrito(false)
+        setWorkIntergalaxy(true)
         setWorkGarden(false)
         setWorkMalte(false)
     }
 
 
+
     const handleGarden = () => {
         setWorkVagas(false)
         setWorkDistrito(false)
+        setWorkIntergalaxy(false)
         setWorkGarden(true)
         setWorkMalte(false)
     }
@@ -38,6 +52,7 @@ const Experience = () => {
     const handleMalte = () => {
         setWorkVagas(false)
         setWorkDistrito(false)
+        setWorkIntergalaxy(false)
         setWorkGarden(false)
         setWorkMalte(true)
     }
@@ -62,6 +77,11 @@ const Experience = () => {
                         Distrito
                     </li>
                     <li
+                        onClick={handleIntergalxy}
+                        className={`${workIntergalaxy ? "border-l-textGreen text-textGreen" : "border-l-hoverColor text-textDark"} bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium border-l-2`}>
+                        Intergalaxy
+                    </li>
+                    <li
                         onClick={handleGarden}
                         className={`${workGarden ? "border-l-textGreen text-textGreen" : "border-l-hoverColor text-textDark"} bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium border-l-2`}>
                         Chroma Garden
@@ -74,6 +94,7 @@ const Experience = () => {
                 </ul>
                 {workVagas && <Vagas />}
                 {workDistrito && <Distrito />}
+                {workIntergalaxy && <Intergalaxy />}
                 {workGarden && <Garden />}
                 {workMalte && <Malte />}
             </div>
