@@ -10,16 +10,16 @@ const Distrito = () => {
     transition={{delay: 0.1}} 
     className="w-full"
     >
-        <h3 className="flex gap-1 font-medium text-xl font-titleFont">Full Front End Developer <span className="text-textGreen">@Distrito</span></h3>
-        <p className="text-sm mt-1 font-medium text-textDark">Fev 2022 - Out 2022</p>
+        <h3 className="flex gap-1 font-medium text-xl font-titleFont">Junior Front End Developer <span className="text-textGreen">@Intergalaxy</span></h3>
+        <p className="text-sm mt-1 font-medium text-textDark">Jan 2021 - Jan 2022</p>
         <ul className="mt-6 flex flex-col gap-3">
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Development of web applications using React, TypeScript, and Next.
+                Development of websites and platforms using PHP/Laravel.
             </li>
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /></span>
-                Collaboration with development team to implement features and fix bugs.
+                Programming on the front (blades, styles and js).
             </li>
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /> </span>
@@ -27,12 +27,9 @@ const Distrito = () => {
             </li>
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Following agile development practices and participating in Scrum ceremonies.
+                Using monday to monitor tasks.
             </li>
-            <li className="text-base flex gap-2 text-textDark">
-                <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Development using SWR, Styled Components, Axios, Context API, and Design System.
-            </li>
+         
             
         </ul>
     </motion.div>
