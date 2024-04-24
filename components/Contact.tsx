@@ -6,13 +6,13 @@ export const Contact = () => {
     <section id="contact"
     className="max-w-contentContainer mx-auto py-10 xl:py-32 flex flex-col gap-4 items-center justify-center"
     >
-        <p className="font-titleFont text-lg text-textGreen font-semibold flex items-center tracking-wide">04. What"s Next?</p>
-        <h2 className="font-titleFont text-5xl font-semibold">Get In Touch</h2>
-        <p className="max-w-[600px] text-center text-textDark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic laudantium ratione eos corrupti maxime veniam facilis illum modi officia quisquam. Voluptatem fugit harum ad eius a dolorem deleniti est dolore.</p>
-        <Link href="/">
+        <p className="font-titleFont text-lg text-textGreen font-semibold flex items-center tracking-wide">04. Let's connect?</p>
+        <h2 className="font-titleFont text-5xl font-semibold">Contact</h2>
+    
+        <Link href="https://wa.me/5541999174948?text=Ol%C3%A1%2C+estou+entrando+em+contato+para+saber+mais+sobre+seu+trabalho+como+Front+End" target="_blank">
             <button
               className="w-40 h-14 rounded-md text-textGreen text-[]13px] border border-textGreen hover:bg-hoverColor duration-300"
-            >Say Hello</button>
+            >Whatsapp</button>
         </Link>
     </section>
   )

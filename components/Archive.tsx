@@ -12,76 +12,16 @@ const Archive = () => {
                 <p className="text-sm font-titleFont text-textGreen">View the archive</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10'>
-                <ArchiveCard link="/" title="Educate English Learning Academy" des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas officia fuga quis voluptatem placeat blanditiis modi nostrum sint, velit dicta praesentium accusamus qui et veniam? In reprehenderit rerum perspiciatis." listItem={['Reactjs', 'Tailwind', 'NextJs']} />
-                <ArchiveCard link="/" title="Educate English Learning Academy" des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas officia fuga quis voluptatem placeat blanditiis modi nostrum sint, velit dicta praesentium accusamus qui et veniam? In reprehenderit rerum perspiciatis." listItem={['Reactjs', 'Tailwind', 'NextJs']} />
-                <ArchiveCard link="/" title="Educate English Learning Academy" des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas officia fuga quis voluptatem placeat blanditiis modi nostrum sint, velit dicta praesentium accusamus qui et veniam? In reprehenderit rerum perspiciatis." listItem={['Reactjs', 'Tailwind', 'NextJs']} />
-                <ArchiveCard link="/" title="Educate English Learning Academy" des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas officia fuga quis voluptatem placeat blanditiis modi nostrum sint, velit dicta praesentium accusamus qui et veniam? In reprehenderit rerum perspiciatis." listItem={['Reactjs', 'Tailwind', 'NextJs']} />
-                <ArchiveCard link="/" title="Educate English Learning Academy" des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas officia fuga quis voluptatem placeat blanditiis modi nostrum sint, velit dicta praesentium accusamus qui et veniam? In reprehenderit rerum perspiciatis." listItem={['Reactjs', 'Tailwind', 'NextJs']} />
-                <ArchiveCard link="/" title="Educate English Learning Academy" des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas officia fuga quis voluptatem placeat blanditiis modi nostrum sint, velit dicta praesentium accusamus qui et veniam? In reprehenderit rerum perspiciatis." listItem={['Reactjs', 'Tailwind', 'NextJs']} />
+                <ArchiveCard link="https://github.com/alecod/feedget" title="Feedget" des="This is a project that creates an evaluation component to apply to other applications" listItem={['Reactjs', 'Tailwind', 'Typescript']} />
+                <ArchiveCard link="https://github.com/alecod/moveit" title="Moveit" des="This project was created to create a routine of Pomodoro-style challenges to increase focus during studies. It has level logic, as well as the use of date and time functions" listItem={['Reactjs', 'Context API', 'CSS Modules']} />
+                <ArchiveCard link="https://github.com/alecod/podcastr" title="Podcastr" des="In this project, an application interface for podcasts is created. It has play, pause, next components, in addition to using an API to bring data to the application" listItem={['Next', 'Context API', 'Axios']} />
+                <ArchiveCard link="https://github.com/alecod/aluraorkut" title="Orkut Interface" des="In this project, it replicates the Orkut interface, very popular here in Brazil between the years 2000 and 2010. For the application data, I used the Github API itself." listItem={['Reactjs', 'Javascript', 'Styled-components']} />
+                
 
-                {showMore && (
-                  <>
-                    <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.1 }}
-                    >
-                    <ArchiveCard link="/" title="Educate English Learning Academy" des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas officia fuga quis voluptatem placeat blanditiis modi nostrum sint, velit dicta praesentium accusamus qui et veniam? In reprehenderit rerum perspiciatis." listItem={['Reactjs', 'Tailwind', 'NextJs']} />
-                    </motion.div>
-                    <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.2 }}
-                    >
-                    <ArchiveCard link="/" title="Educate English Learning Academy" des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas officia fuga quis voluptatem placeat blanditiis modi nostrum sint, velit dicta praesentium accusamus qui et veniam? In reprehenderit rerum perspiciatis." listItem={['Reactjs', 'Tailwind', 'NextJs']} />
-                    </motion.div>
-                    <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.3 }}
-                    >
-                    <ArchiveCard link="/" title="Educate English Learning Academy" des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas officia fuga quis voluptatem placeat blanditiis modi nostrum sint, velit dicta praesentium accusamus qui et veniam? In reprehenderit rerum perspiciatis." listItem={['Reactjs', 'Tailwind', 'NextJs']} />
-                    </motion.div>
-                    <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.4 }}
-                    >
-                    <ArchiveCard link="/" title="Educate English Learning Academy" des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas officia fuga quis voluptatem placeat blanditiis modi nostrum sint, velit dicta praesentium accusamus qui et veniam? In reprehenderit rerum perspiciatis." listItem={['Reactjs', 'Tailwind', 'NextJs']} />
-                    </motion.div>
-                    <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.5 }}
-                    >
-                    <ArchiveCard link="/" title="Educate English Learning Academy" des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas officia fuga quis voluptatem placeat blanditiis modi nostrum sint, velit dicta praesentium accusamus qui et veniam? In reprehenderit rerum perspiciatis." listItem={['Reactjs', 'Tailwind', 'NextJs']} />
-                    </motion.div>
-                    <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.6 }}
-                    >
-                    <ArchiveCard link="/" title="Educate English Learning Academy" des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas officia fuga quis voluptatem placeat blanditiis modi nostrum sint, velit dicta praesentium accusamus qui et veniam? In reprehenderit rerum perspiciatis." listItem={['Reactjs', 'Tailwind', 'NextJs']} />
-                    </motion.div>
-                  </>
-                )}
+            
 
             </div>
-            <div className="mt-12 flex items-center justify-center">
-             { showMore ? (
-            
-                   <button
-                    onClick={() => setShowMore(false)}
-                    className='w-36 h-12 rounded-md text-textGreen text-[]13px] border border-textGreen hover:bg-hoverColor duration-300'>Show Less</button>
-              
-             ) : (
-           
-                   <button
-                    onClick={() => setShowMore(false)}
-                    className='w-36 h-12 rounded-md text-textGreen text-[]13px] border border-textGreen hover:bg-hoverColor duration-300'>Show More</button>
-            
-             )}
-            </div>
+         
         </section>
     )
 }

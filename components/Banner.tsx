@@ -28,11 +28,7 @@ const Banner = () => {
                 <br />
              
             </motion.p>
-            <motion.button 
-            initial={{ y: 10, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.9, duration: 0.5 }}
-            className="w-52 h-14 text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300">Check out my Project!</motion.button>
+
         </section>
     )
 }
