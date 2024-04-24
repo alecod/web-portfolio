@@ -1,6 +1,5 @@
 import logo from "./images/logo.webp"
 import profileImg from "./images/iam.jpg"
-import amazonImg from "./images/amazon.webp"
 import cyberImg from "./images/cyber.webp"
 import noorShop from "./images/noorShop.webp"
 import euaSvg from "./images/us.svg"
@@ -9,4 +8,4 @@ import spotify from "./images/spotify.png"
 import booking from "./images/booking.png"
 
 
-export {logo, profileImg, amazonImg, noorShop, cyberImg, euaSvg, brSvg, spotify, booking}
+export {logo, profileImg, noorShop, cyberImg, euaSvg, brSvg, spotify, booking}
