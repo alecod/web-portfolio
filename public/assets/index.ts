@@ -4,8 +4,8 @@ import cyberImg from "./images/cyber.webp"
 import noorShop from "./images/noorShop.webp"
 import euaSvg from "./images/us.svg"
 import brSvg from "./images/br.svg"
-import spotify from "./images/spotify.png"
-import booking from "./images/booking.png"
+import spotify from "./images/spotify.webp"
+import booking from "./images/booking.webp"
 
 
 export {logo, profileImg, noorShop, cyberImg, euaSvg, brSvg, spotify, booking}
