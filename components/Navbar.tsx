@@ -5,12 +5,11 @@ import { motion } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { MdOutlineClose } from 'react-icons/md'
 import { TbBrandGithub } from 'react-icons/tb'
-import { SlSocialYoutube, SlSocialLinkedin, SlSocialInstagram } from 'react-icons/sl'
+import { SlSocialLinkedin } from 'react-icons/sl'
 
 
 const Navbar = () => {
 
-  const [showFlag, setShowFlag] = useState(false)
   const ref = useRef<string | any>('')
   const [showMenu, setShowMenu] = useState(false)
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {

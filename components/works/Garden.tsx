@@ -15,19 +15,20 @@ const Garden = () => {
         <ul className="mt-6 flex flex-col gap-3">
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Development of hotsites using HTML, CSS, Javascript, Jquery, and Bootstrap.
+                Developed hotsites using HTML, CSS, Javascript, jQuery, and Bootstrap.
             </li>
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /></span>
-                Participation in code reviews for learning and improving code quality.
+                Participated in code reviews for learning and improving code quality.
             </li>
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Use of kanban for task management.
+                Used Kanban for task tracking.
             </li>
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Development of 360 platforms, similar to Google Street View, using Pano2VR software
+                Developed 360 platforms, Google Street View style, using Pano2VR software, in collaboration with the development and 3D modeling team.
+
             </li> 
         </ul>
     </motion.div>

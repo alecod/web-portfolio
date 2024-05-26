@@ -6,6 +6,7 @@ import euaSvg from "./images/us.svg"
 import brSvg from "./images/br.svg"
 import spotify from "./images/spotify.webp"
 import booking from "./images/booking.webp"
+import wallmart from "./images/wallmart.webp"
 
 
-export {logo, profileImg, noorShop, cyberImg, euaSvg, brSvg, spotify, booking}
+export {logo, profileImg, noorShop, cyberImg, euaSvg, brSvg, spotify, booking, wallmart}

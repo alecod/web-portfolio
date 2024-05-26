@@ -1,5 +1,5 @@
 import { TbBrandGithub } from 'react-icons/tb'
-import { SlSocialYoutube, SlSocialLinkedin, SlSocialInstagram } from 'react-icons/sl'
+import { SlSocialLinkedin } from 'react-icons/sl'
 
 
 const LeftSide = () => {
