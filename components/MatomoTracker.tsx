@@ -15,7 +15,7 @@ const MatomoTracker = () => {
     (() => {
       const u = "http://localhost:8080/";
       window._paq.push(['setTrackerUrl', u + 'matomo.php']);
-      window._paq.push(['setSiteId', '2']);
+      window._paq.push(['setSiteId', '1']);
       const d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
       g.async = true; g.src = u + 'matomo.js';
       if (s.parentNode) {
