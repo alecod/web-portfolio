@@ -2,7 +2,7 @@ import React from 'react'
 
 interface SectionTitle {
   title: string;
-  titleNo: string;
+  titleNo?: string;
 }
 
 const SectionTitle = ({title, titleNo}: SectionTitle) => {

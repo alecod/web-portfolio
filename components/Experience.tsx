@@ -5,6 +5,7 @@ import Distrito from './works/Distrito'
 import Intergalaxy from './works/Intergalaxy'
 import Garden from './works/Garden'
 import Malte from './works/Malte'
+import Kaibox from './works/Kaibox'
 
 const Experience = () => {
 
@@ -13,6 +14,7 @@ const Experience = () => {
     const [workIntergalaxy, setWorkIntergalaxy] = useState(false)
     const [workGarden, setWorkGarden] = useState(false)
     const [workMalte, setWorkMalte] = useState(false)
+    const [workKaibox, setWorkKaibox] = useState(false)
 
     const handleVagas = () => {
         setWorkVagas(true)
@@ -20,6 +22,7 @@ const Experience = () => {
         setWorkIntergalaxy(false)
         setWorkGarden(false)
         setWorkMalte(false)
+        setWorkKaibox(false)
     }
 
     const handleDistrito = () => {
@@ -28,6 +31,7 @@ const Experience = () => {
         setWorkIntergalaxy(false)
         setWorkGarden(false)
         setWorkMalte(false)
+        setWorkKaibox(false)
     }
 
     const handleIntergalxy = () => {
@@ -36,6 +40,7 @@ const Experience = () => {
         setWorkIntergalaxy(true)
         setWorkGarden(false)
         setWorkMalte(false)
+        setWorkKaibox(false)
     }
 
 
@@ -46,6 +51,7 @@ const Experience = () => {
         setWorkIntergalaxy(false)
         setWorkGarden(true)
         setWorkMalte(false)
+        setWorkKaibox(false)
     }
 
 
@@ -55,6 +61,16 @@ const Experience = () => {
         setWorkIntergalaxy(false)
         setWorkGarden(false)
         setWorkMalte(true)
+        setWorkKaibox(false)
+    }
+
+    const hadleKaibox = () => {
+        setWorkVagas(false)
+        setWorkDistrito(false)
+        setWorkIntergalaxy(false)
+        setWorkGarden(false)
+        setWorkMalte(false)
+        setWorkKaibox(true)
     }
 
 
@@ -66,6 +82,11 @@ const Experience = () => {
             <SectionTitle title='Where I have worked' titleNo='02.' />
             <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
                 <ul className="md:w-32 flex flex-col">
+                <li
+                        onClick={hadleKaibox}
+                        className={`${workKaibox ? "border-l-textGreen text-textGreen" : "border-l-hoverColor text-textDark"} bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium border-l-2`}>
+                        Kai Box
+                    </li>
                     <li
                         onClick={handleVagas}
                         className={`${workVagas ? "border-l-textGreen text-textGreen" : "border-l-hoverColor text-textDark"} bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium border-l-2`}>
@@ -97,6 +118,7 @@ const Experience = () => {
                 {workIntergalaxy && <Intergalaxy />}
                 {workGarden && <Garden />}
                 {workMalte && <Malte />}
+                {workKaibox && <Kaibox />}
             </div>
         </section>
     )

@@ -1,12 +1,10 @@
-import React from "react"
-import SectionTitle from "./SectionTitle"
-import { AiFillThunderbolt } from "react-icons/ai"
-import Image from "next/image"
-import { profileImg } from "@/public/assets"
+import React from "react";
+import SectionTitle from "./SectionTitle";
+import { AiFillThunderbolt } from "react-icons/ai";
+import Image from "next/image";
+import { profileImg } from "@/public/assets";
 
 const About = () => {
-
-
   return (
     <section
       id="about"
@@ -15,73 +13,158 @@ const About = () => {
       <SectionTitle title="About" titleNo="01." />
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
-          <p>Mid-Level Front End Developer with 5 years of experience, specializing in Javascript, Typescript,
-            React, and Next.js. Currently enhancing my skills towards Full Stack development with Node.js,
-            exploring Fastify and Express frameworks. Engaged in practical projects and self-study to solidify my
-            knowledge in these technologies. Additionally, focusing on improving my understanding of unit and
-            integration testing using Jest and studying Design Patterns principles, particularly Data-Driven Design.
-            
+          <p>
+            Mid-level Front-End Developer with 6 years of experience,
+            specialized in JavaScript, TypeScript, React, and Next.js. I have
+            solid experience in developing complex applications, integrating
+            internal and external APIs, state management, contexts, cache, SSR,
+            pipeline configuration, Docker Images, ESlint, Prettier, and unit
+            and integration testing.
           </p>
-          <p>I possess market insights, understanding competitors and trends, enabling me to contribute
-            significantly to business success. I am communicative, collaborative, and committed to delivering
-            high-quality projects that meet business needs.</p>
-          <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-3 gap-2 mt-6">
-            <li className="flex items-center gap-1">
-              <span className="text-textGreen"><AiFillThunderbolt /></span>Javascript (ES6+)
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen"><AiFillThunderbolt /></span>Node.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen"><AiFillThunderbolt /></span>Next.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen"><AiFillThunderbolt /></span>React.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen"><AiFillThunderbolt /></span>Typescript
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen"><AiFillThunderbolt /></span>Tailwind
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen"><AiFillThunderbolt /></span>Styled Components
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen"><AiFillThunderbolt /></span>Fastify
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen"><AiFillThunderbolt /></span>Express
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen"><AiFillThunderbolt /></span>Prisma
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen"><AiFillThunderbolt /></span>Postgres
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen"><AiFillThunderbolt /></span>SQLite
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen"><AiFillThunderbolt /></span>Context API
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen"><AiFillThunderbolt /></span>Redux
-            </li> <li className="flex items-center gap-2">
-              <span className="text-textGreen"><AiFillThunderbolt /></span>Jest
-            </li>
-          </ul>
+          <p>
+            Currently, I am enhancing my skills for Full Stack development with
+            Node.js, studying software architecture, asynchronous messaging,
+            microservices, databases, and everything related to building
+            decoupled and scalable applications.
+          </p>
+          <p>
+            I am a communicative and collaborative professional, always aiming
+            to deliver projects and features with performance and security. I
+            have a market vision, understand competitors and trends, which
+            allows me to contribute significantly to business success.
+          </p>
+
+          <div className="mt-3">
+            <div className="w-full mb-3">
+              <SectionTitle title="Solid Skills"  />
+            </div>
+            <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-3 gap-2 mt-6">
+              <li className="flex items-center gap-1">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                Javascript
+              </li>
+
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                Next.js
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                React.js
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                Typescript
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                Tailwind
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                Styled Components
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                React Query
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                Redux
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                Context API
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                Zustand
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                Zod
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                Git
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                Gitflow
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                Docker
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                Server Actions (SSR)
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                Github Actions
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                Jest
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                Vitest
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="w-full lgl:w-1/3 h-80 relative group">
           <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg">
             <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
-              <Image src={profileImg} alt="Profile img" className="rounded-lg h-full object-cover" />
+              <Image
+                src={profileImg}
+                alt="Profile img"
+                className="rounded-lg h-full object-cover"
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
