@@ -15,20 +15,19 @@ const Distrito = () => {
         <ul className="mt-6 flex flex-col gap-3">
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Developed websites and platforms using PHP/Laravel, focusing on implementing the presentation and user interaction layer.
+                Development of websites and platforms using PHP/Laravel, focusing on implementing the presentation layer and user interaction.
             </li>
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /></span>
-                Front-end programming using blades, styles (CSS), and Javascript to create responsive and dynamic interfaces.
+                Frontend programming using blades, HTML, CSS, Bootstrap, jQuery, and JavaScript.
             </li>
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Used Monday for task management, ensuring effective and organized collaboration with the team.
+                Configuration and optimization for SEO.
             </li>
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Besides developing websites, I was also responsible for creating hotsites, landing pages, and improving client-side performance, implementing optimizations to enhance speed and efficiency of applications.
-
+                hotsites and landing pages for marketing campaigns.
             </li>
          
             

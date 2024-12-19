@@ -15,24 +15,21 @@ const Distrito = () => {
         <ul className="mt-6 flex flex-col gap-3">
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Developed web applications using React, Typescript, and Next.js.
+                At Distrito, I was responsible for developing the courses feature within the platform, which connects companies and startups with educational content, allowing companies to offer both internal and external courses in a simplified way.
             </li>
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /></span>
-                Actively collaborated in implementing new features and fixing bugs, ensuring stability and performance of applications.
+                Development of the application using React, TypeScript, and Next.js, focusing on user experience, ensuring smooth and responsive navigation.
             </li>
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Integrated APIs to facilitate efficient communication between developed applications and the company's internal systems.
+                Integration with the Getnet payment API to manage financial transactions for courses, as well as developing a permission system for students and teachers.
             </li>
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Created hotsites and landing pages for specific campaigns, using best design and development practices to attract and engage users.
+                Implementation of features such as grading system, reviews, and comments to improve interaction and feedback between platform users.
             </li>
-            <li className="text-base flex gap-2 text-textDark">
-                <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Integrated with email marketing platforms to automate and optimize communication and marketing campaigns, ensuring an effective and personalized approach.
-            </li>
+        
             
         </ul>
     </motion.div>

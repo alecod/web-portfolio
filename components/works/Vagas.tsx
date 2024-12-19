@@ -15,24 +15,21 @@ const Vagas = () => {
         <ul className="mt-6 flex flex-col gap-3">
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Developed and maintained web applications with React, Next.js, and Typescript, enhancing performance and building components and functionalities.
+                At Vagas, I worked on a stage of migrating a legacy .NET monolith project to a new UI with React. This was a very challenging project because all the APIs of this application remained in the monolith, and as Front-End developers, we had to handle a lot of data processing and conversions. The project itself is a recruitment and selection platform from the business owner's perspective.
             </li>
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /></span>
-                Collaborated with design and back-end teams to create responsive and interactive interfaces.
+                Integration with the .NET backend, creating complex filters (such as age, location, tags, profession, and more than 50 filters) to improve candidate search, using Context API to manage states efficiently.
             </li>
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Utilized Atomic Design concepts.
+                Development of microsites and landing pages focused on marketing campaigns.
             </li>
             <li className="text-base flex gap-2 text-textDark">
                 <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Integrated APIs, ensuring efficient communication with internal and external systems.
+                We used Scrum as an agile practice in the work environment.
             </li>
-            <li className="text-base flex gap-2 text-textDark">
-                <span className="text-textGreen mt-1"><TiArrowForward /> </span>
-                Participated in planning and code reviews, ensuring quality and timely deliveries, and Scrum ceremonies, promoting agile practices.
-            </li>
+           
           
         </ul>
     </motion.div>
