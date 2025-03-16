@@ -18,15 +18,11 @@ const About = () => {
             specialized in JavaScript, TypeScript, React, and Next.js. I have
             solid experience in developing complex applications, integrating
             internal and external APIs, state management, contexts, cache, SSR,
-            pipeline configuration, Docker Images, ESlint, Prettier, and unit
+            pipeline configuration, Docker Images, ESlint, Prettier, unit
             and integration testing.
           </p>
-          <p>
-            Currently, I am enhancing my skills for Full Stack development with
-            Node.js, studying software architecture, asynchronous messaging,
-            microservices, databases, and everything related to building
-            decoupled and scalable applications.
-          </p>
+   
+       
           <p>
             I am a communicative and collaborative professional, always aiming
             to deliver projects and features with performance and security. I

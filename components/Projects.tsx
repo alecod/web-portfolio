@@ -14,7 +14,7 @@ const Projects = () => {
             <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
                 <div className="w-full flex flex-col items-center justify-center gap-20 mt-10">
                 <div className="flex flex-col xl:flex-row-reverse gap-6">
-                        <Link href="https://github.com/alecod/spotify-webplayer" className="w-full xl:w-1/2 h-auto relative group" target="_blank">
+                        <Link href="https://github.com/alecod/walmart-interface" className="w-full xl:w-1/2 h-auto relative group" target="_blank">
                             <div>
                                 <Image className="w-full h-full object-contain" src={wallmart} alt="Amazon Img" />
                             </div>
@@ -32,7 +32,7 @@ const Projects = () => {
                                 <li>Web scraper API</li>
                             </ul>
                             <div className="text-2xl flex gap-4">
-                                <Link href="https://github.com/alecod/wallmart-interface" className="hover:text-textGreen duration-300" target="_blank">
+                                <Link href="https://github.com/alecod/walmart-interface" className="hover:text-textGreen duration-300" target="_blank">
                                     <TbBrandGithub />
                                 </Link>
 
